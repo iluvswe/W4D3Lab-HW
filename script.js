@@ -10,39 +10,15 @@ let quotes = [
 document.addEventListener("DOMContentLoaded", function(event) {
   // Random quote of the day generator
   const randomQuote = function() {
-    document.querySelector('#quote-of-the-day').textContent = `"${quotes[Math.floor(Math.random() * quotes.length)]}"`;
+    document.querySelector('#quote-of-the-day').textContent = 
+    `"${quotes[Math.floor(Math.random() * quotes.length)]}"`;
   };
   randomQuote();
   
-  // Do all of your work inside the document.addEventListener  
+  const mainTitle = document.getElementById("main-title");
+  mainTitle.innerText = "The World of DOM";
+  
+  const newColor = document.body.style.backgroundColor = "lightpink";
+  });
+ 
 
-  // Part 1
-
-
-  // Part 2
-
-
-  // Part 3
-
-
-  // Part 4
-
-
-  // Part 5
-
-
-  // Part 6
-
-
-  // Part 7
-
-
-  // Part 8
-
-
-  // Part 9
-
-
-
-
-});
